@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h3>Karam</h3>
+      <ul>
+        <li class="active">
+          <a href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="settings.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="friends.html">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="files.html">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a href="plans.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+    <div class="navbar">
+      <input type="search" placeholder="Type A Keyword" id="search-input">
+      <div class="icons">
+        <span>
+          <i class="fa-regular fa-bell fa-lg"></i>
+        </span>
+        <img src="imgs/avatar.png" alt="">
+      </div>
+    </div>
+    <div class="main-content">
+      <h3>Dashboard</h3>
+
+      <div class="main-content-box">
+      <div class="welcome-card">
+          <div class="welcome-txt">
+            <h4>Welcome</h4>
+            <p>Karam</p>
+           <div class="welcome-txt-background">
+            <img src="imgs/welcome.png" alt="">
+           </div>
+          </div>
+        <img class="img-welcome" src="imgs/avatar.png" alt="">
+        <hr>
+
+        <div class="welcome-info">
+          <div class="welcome-txt-info">
+            <h4>Karam Alhinnawei</h4>
+            <p>Front-end Developer</p>
+          </div>
+
+          <div class="welcome-txt-info">
+            <h4>80</h4>
+            <p>Projects</p>
+          </div>
+
+          <div class="welcome-txt-info">
+            <h4>8500</h4>
+            <p>Developer</p>
+          </div>
+        </div>
+        <hr>
+        <a href="profile.html">Profile</a>
+      </div>
+
+      <div class="welcome-card quick-box">
+        <div class="welcome-txt quick-txt">
+            <h4>Quick Draft</h4>
+            <p>Write A Draft For Your Idea</p>
+         </div>
+         <div class="quick-input">
+          <input type="text" placeholder="Title">
+          <textarea cols="25" rows="10" placeholder="Your Thoughts"></textarea>
+         </div>
+        <a href="index.html">Save</a>
+      </div>
+
+      <div class="welcome-card targets">
+
+        <div class="welcome-txt quick-txt txt-targets">
+          <h4>Yearly Targets</h4>
+          <p>Targets Of The Year</p>
+       </div>
+
+       <div class="targets-row blue">
+         <div class="icon-target">
+             <i class="fa-solid fa-dollar-sign"></i>
+         </div>
+         <div class="details-targets">
+            <span id="target-name">Money</span>
+            <span id="main-target">20.00</span>
+            <div class="progress">
+              <span class="blue" style="width: 80%;">
+                <span id="percent">80%</span>
+              </span>
+            </div>
+         </div>
+       </div>     
+
+       <div class="targets-row orange">
+        <div class="icon-target">
+            <i class="fa-solid fa-code" style="color: var(--orange-color);"></i>
+        </div>
+        <div class="details-targets">
+           <span id="target-name">Projects</span>
+           <span id="main-target">24</span>
+           <div class="progress">
+             <span class="orange" style="width: 36%; background-color: var(--orange-color);">
+               <span id="percent" style="background-color: var(--orange-color);">36%</span>
+             </span>
+           </div>
+        </div>
+      </div>    
+
+      <div class="targets-row green">
+        <div class="icon-target">
+            <i class="fa-solid fa-user" style="color: var(--green-color);"></i>
+        </div>
+        <div class="details-targets">
+           <span id="target-name">Team</span>
+           <span id="main-target">24</span>
+           <div class="progress">
+             <span class="green" style="width: 65%; background-color: rgba(0, 128, 0, 0.371);">
+               <span id="percent" style="background-color: var(--green-color);">65%</span>
+             </span>
+           </div>
+        </div>
+      </div>    
+
+
+    </div>
+
+    <div class="welcome-card tickets">
+       <div class="tickets-txt quick-txt  welcome-txt">
+        <h4>Tickets Statistics</h4>
+        <p>Everything About Support Tickets</p>
+       </div>
+
+       <div class="cards">
+        <div class="card" id="card">
+          <i class="fa-regular fa-rectangle-list fa-2x"></i>
+          <span>2500</span>
+          Total
+        </div>
+
+        <div class="card" id="card">
+          <i class="fa-solid fa-spinner fa-2x" id="card-blue"></i>
+          <span>500</span>
+          Pending
+        </div>
+
+        <div class="card" id="card">
+          <i class="fa-regular fa-circle-check fa-2x" id="card-green"></i>
+          <span>1900</span>
+          closed
+        </div>
+
+        <div class="card" id="card">
+          <i class="fa-regular fa-rectangle-xmark fa-2x" id="card-red"></i>
+          <span>100</span>
+          Deleted
+        </div>
+
+
+       </div>
+   </div>
+
+   <div class="welcome-card news">
+    <div class="news-txt quick-txt welcome-txt">
+      <h4>Latest News</h4>
+    </div>
+
+    <div class="card-news">
+      
+    <div class="news-main">
+      <img src="imgs/news-01.png" alt="">
+      <div class="news-main-text">
+      <span>Created SASS Section</span>
+      <span>New SASS Examples & Tutorials</span>
+    </div>
+    </div>
+    <div class="news-date">3 Days Ago</div>
+  </div>
+  <hr>
+
+  <div class="card-news">
+  <div class="news-main">
+    <img src="imgs/news-02.png" alt="">
+    <div class="news-main-text">
+    <span>Changed The Design</span>
+    <span>A Brand New Website Design</span>
+  </div>
+</div>
+  <div class="news-date">5 Days Ago</div>
+</div>
+<hr>
+
+<div class="card-news">
+<div class="news-main">
+  <img src="imgs/news-03.png" alt="">
+  <div class="news-main-text">
+  <span>Team Increased</span>
+  <span>3 Developers Joined The Team</span>
+</div>
+</div>
+<div class="news-date">7 Days Ago</div>
+</div>
+<hr>
+
+<div class="card-news">
+<div class="news-main">
+  <img src="imgs/news-04.png" alt="">
+  <div class="news-main-text">
+  <span>Added Payment Gateway</span>
+  <span>Many New Payment Gateways Added</span>
+</div>
+</div>
+<div class="news-date">9 Days Ago</div>
+</div>
+
+   </div>
+
+   <div class="welcome-card Tasks">
+    <div class="tasks-txt quick-txt welcome-txt">
+      <h4>Latest Tasks</h4>
+    </div>
+
+    <div class="tasks-cards">
+
+      <div class="task">
+        <div class="task-main-txt">
+           <span>Record One New Video</span>
+           <span>Record Python Create Exe Project</span>
+        </div>   
+            <i class="fas fa-trash"></i>
+      </div>
+ <hr>
+      <div class="task">
+         <div class="task-main-txt">
+          <span>Record One New Video</span>
+          <span>Record Python Create Exe Project</span>
+         </div>
+         <i class="fas fa-trash"></i>
+      </div>
+<hr>
+   <div class="task">
+    <div class="task-main-txt">
+    <span>Record One New Video</span>
+    <span>Record Python Create Exe Project</span>
+    </div>
+     <i class="fas fa-trash"></i>
+    </div>
+<hr>
+  <div class="task">
+    <div class="task-main-txt">
+  <del>Record One New Video</del>
+  <del>Record Python Create Exe Project</del>
+    </div>
+   <i class="fas fa-trash"></i>
+  </div>
+<hr>  
+
+<div class="task">
+  <div class="task-main-txt">
+  <span>Record One New Video</span>
+  <span>Record Python Create Exe Project</span>
+  </div>
+   <i class="fas fa-trash"></i>
+  </div>
+
+    </div>
+   </div>
+
+   <div class="welcome-card items">
+    <div class="tasks-txt quick-txt welcome-txt">
+      <h4>Top Search Items</h4>
+    </div>
+
+     <div class="keyword">
+      <span>Keyword</span>
+      <span>Search Count</span>
+     </div>
+
+     <div class="key-count">
+      <span>Programming</span>
+      <span class="count">220</span>
+     </div>
+
+     <div class="key-count">
+      <span>Javascript</span>
+      <span class="count">180</span>
+     </div>
+
+     <div class="key-count">
+      <span>Html</span>
+      <span class="count">170</span>
+     </div>
+
+     <div class="key-count">
+      <span>Css</span>
+      <span class="count">190</span>
+     </div>
+
+     <div class="key-count">
+      <span>Design</span>
+      <span class="count">124</span>
+     </div>
+
+     <div class="key-count">
+      <span>Code</span>
+      <span class="count">165</span>
+     </div>
+
+   </div>
+
+   <div class="welcome-card uploads">
+    <div class="tasks-txt quick-txt welcome-txt">
+       <h4>Latest Uploads</h4>
+    </div>
+
+      <div class="main-uplaod">
+        <div class="upload-card">
+          <img src="imgs/pdf.svg" alt="">
+          <div class="upload-main-text">
+          <span>My File.pdf</span>
+          <span>Karam</span>
+        </div>
+        </div>
+        <div class="mega-bit">3.9mb</div>
+      </div>
+      <hr>
+
+      <div class="main-uplaod">
+        <div class="upload-card">
+          <img src="imgs/avi.svg" alt="">
+          <div class="upload-main-text">
+          <span>My-Video-File.avi</span>
+          <span>Admin</span>
+        </div>
+        </div>
+        <div class="mega-bit">8.4mb</div>
+      </div>
+      <hr>
+
+      <div class="main-uplaod">
+        <div class="upload-card">
+          <img src="imgs/psd.svg" alt="">
+          <div class="upload-main-text">
+          <span>My-Psd-File.psd</span>
+          <span>Manager</span>
+        </div>
+        </div>
+        <div class="mega-bit">5.4mb</div>
+      </div>
+      <hr>
+
+      <div class="main-uplaod">
+        <div class="upload-card">
+          <img src="imgs/zip.svg" alt="">
+          <div class="upload-main-text">
+          <span>My-Zip-File.zip</span>
+          <span>User</span>
+        </div>
+        </div>
+        <div class="mega-bit">2.4mb</div>
+      </div>
+      <hr>
+
+      <div class="main-uplaod">
+        <div class="upload-card">
+          <img src="imgs/dll.svg" alt="">
+          <div class="upload-main-text">
+          <span>My-Dll-File.dll</span>
+          <span>Designer</span>
+        </div>
+        </div>
+        <div class="mega-bit">9.4mb</div>
+      </div>
+      <hr>
+
+      <div class="main-uplaod">
+        <div class="upload-card">
+          <img src="imgs/eps.svg" alt="">
+          <div class="upload-main-text">
+          <span>My-Eps-File.eps</span>
+          <span>Osama</span>
+        </div>
+        </div>
+        <div class="mega-bit">5.4mb</div>
+      </div>
+
+   </div>
+
+   
+
+    </div>
+  </div>
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
