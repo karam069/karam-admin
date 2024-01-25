@@ -70,10 +70,6 @@ ul{
 .sidebar ul li:hover{
   background-color: rgba(136, 136, 136, 0.150);
 }
-.sidebar ul .active{
-  background-color: rgba(136, 136, 136, 0.150);
-}
-
 /* End Sidebar */
 
 /* Start Navbar */
@@ -177,8 +173,7 @@ ul{
 .welcome-txt p{
   padding-top: 0 ;
   margin-top: -20px;
-  font-weight: 700;
-  opacity: 0.5;
+  color: gray;
   margin-left: 15px;
 }
 .welcome-card .img-welcome{
@@ -728,6 +723,128 @@ ul{
   margin-left: -20px;
 }
 
+/* End Table */
+
+/* Start Settings */
+
+/* Start Sliders */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(54px);
+  -ms-transform: translateX(54px);
+  transform: translateX(54px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* End Sliders */
+
+.control-txt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+}
+.control-txt-main{
+  display: flex;
+  flex-direction: column;
+}
+.control-txt-main span:nth-child(1){
+  font-weight: 600;
+  font-size: 18px;
+}
+.control-txt-main span:nth-child(2){
+  color: gray;
+}
+.site-control textarea{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background-color: white;
+  border: 1px solid gray;
+  margin-top: 4%;
+  resize: none;
+}
+/* End Settings */
+
+/* Start Info-gen */
+.info-gen{
+  position: relative;
+}
+.info-gen form input{
+ display: block;
+ width: 500px;
+ border-radius: 10px;
+ height: 40px;
+ border: 1px solid gray;
+ outline: none;
+ margin-bottom: 20px;
+ padding-left: 10px;
+ margin-top: 10px;
+}
+.info-gen form label{
+  color: gray;
+  display: block;
+  margin: 10px 30px;
+}
+.info-gen a{
+  transform: translateY(-230%);
+}
+/* End Info-gen */
+
 @media screen and (max-width: 600px) {
   .sidebar{
     width: 60px;
@@ -776,6 +893,15 @@ ul{
 }
 .launch-icon{
   display: none;
+}
+.post-txt{
+  transform: translateY(-5px);
+}
+.info-gen form input{
+  width: 300px;
+}
+#last-input{
+  width: 250px !important;
 }
 }
 /* End Responsive */
