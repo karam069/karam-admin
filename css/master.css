@@ -136,8 +136,8 @@ ul{
 }
 .main-content h3::after{
   content: '';
-  background: linear-gradient(to right, black 0%, black 25%, white 25%, white 100%);
-  width: 180px;
+  background: linear-gradient(to right, black 0%, black 35%, white 35%, white 100%);
+  width: 120px;
   height: 4px;
   position: absolute;
   top: 50px;
@@ -371,6 +371,9 @@ ul{
   margin-bottom: 15px; 
   color: var(--orange-color);
 }
+.spin{
+  animation: spin 1.5s infinite;
+}
 .tickets .cards .card span{
   font-size: 20px;
   font-weight: 700;
@@ -456,6 +459,8 @@ ul{
 }
 .task i:hover{
   color: var(--red-color);
+  transition: .6s;
+  transform: translateY(-3px);
 }
 /* End Tasks */
 
@@ -506,6 +511,223 @@ ul{
    opacity: 0.5;
 }
 /* End Uplaods */
+
+/* Start Project */
+.projects ul{
+  margin-top: 0px;
+  position: relative;
+}
+.projects ul::before{
+  content: '';
+  position: absolute;
+  left: 51px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+.projects ul li{
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.projects ul li::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 1;
+}
+.projects ul li.done::before{
+  content: '';
+  background-color: #0075ff;
+}
+.projects ul li.current::before{
+  content: '';
+  animation: progressProg .8s alternate infinite;
+}
+.launch-icon{
+  width: 200px;
+  opacity: 0.3;
+  position: absolute;
+  left: 64%;
+  top: 240px;
+}
+/* End Project */
+
+/* Start Reminders */
+.remind-txt{
+  margin-left: 70px;
+  border-left: 3px solid var(--blue-color);
+  padding-left: 14px;
+  margin-bottom: 35px;
+}
+.remind-txt::before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  left: 30px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: remind 0.6s infinite alternate;
+}
+.reminders .remind-green::before{
+  background-color: var(--green-color);
+}
+.remind-green{
+  border-left-color: var(--green-color);
+}
+.reminders .remind-orange::before{
+  background-color: var(--orange-color);
+}
+.reminders .remind-orange{
+  border-left-color: var(--orange-color);
+}
+.reminders .remind-red::before{
+  background-color: var(--red-color);
+}
+.reminders .remind-red{
+  border-left-color: var(--red-color);
+}
+.remind-txt span:nth-child(1){
+  font-weight: bold;
+  font-size: 16px;
+}
+.remind-txt p{
+  opacity: 0.6;
+  margin-top: 6px;
+}
+/* End Reminders */
+
+/* Start Posts */
+.user-post{
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.user-post img{
+  width: 50px;
+  height: 50px;
+  transform: translateY(-3px);
+}
+.user-post-info{
+  flex-direction: column;
+  padding-left: 20px;
+}
+.user-post-info span{
+  font-weight: bold;
+}
+.user-post-info p{
+  margin-top: 5px;
+  color: grey;
+}
+.user-post-main{
+  padding: 5px 10px 50px 10px;
+}
+.user-post-main p{
+  font-size: 18px;
+}
+.user-post-txt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+}
+.post-txt{
+  opacity: 0.6;
+  transition: .5s;
+}
+.post i:hover{
+  color: var(--red-color);
+}
+/* End Posts */
+
+/* Start Social Media */
+.social-txt{
+  height: 10%;
+}
+.social-div-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+  background-color: #0077ff2e;
+  width: 95%;
+  margin: 10px;
+}
+.social-icons-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.social-icons-info i{
+  background-color: var(--blue-color);
+  margin-right: 10px;
+  color: white;
+  padding: 20px;
+}
+.social-icons-info i:hover{
+  transform: rotate(3deg);
+}
+.social-icons-info span{
+  color: rgb(12, 84, 167);
+}
+.social-link a{
+  color: white;
+  padding: 4px 15px;
+}
+/* End Social Media */
+
+/* Start Tables */
+.table{
+  width: 94%;
+  height: 500px;
+}
+.table .responsive-table{
+   overflow-x: auto;
+}
+.table table{
+  min-width: 1000px;
+  width: 100%;
+}
+.table thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+.table table td{
+  padding: 15px;
+}
+.table tbody td{
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.table table img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+  z-index: -1;
+}
+.table table img:not(:first-child){
+  margin-left: -20px;
+}
+
 @media screen and (max-width: 600px) {
   .sidebar{
     width: 60px;
@@ -552,4 +774,39 @@ ul{
 .news-main-text span:nth-child(2){
   font-size: 12px;
 }
+.launch-icon{
+  display: none;
 }
+}
+/* End Responsive */
+
+
+/* Start Animation */
+@keyframes progressProg {
+  from{
+    background-color: #0075ff;
+  } 
+  to{
+    background-color: white;
+  }
+}
+
+@keyframes remind {
+   from{
+    transform: translateY(0);
+   }
+   to{
+    transform: translateY(3px);
+   }
+}
+
+@keyframes spin {
+   0%{
+    transform: rotate(0deg);
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+
+}
+/* End Animation */
