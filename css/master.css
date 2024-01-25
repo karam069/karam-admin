@@ -846,6 +846,9 @@ input:checked + .slider:before {
 /* End Info-gen */
 
 @media screen and (max-width: 600px) {
+  #li-side{
+    background-color: transparent !important;
+  }
   .sidebar{
     width: 60px;
     justify-content: flex-start;
@@ -858,6 +861,9 @@ input:checked + .slider:before {
   }
   .sidebar i{
     transform: translateX(-100%);
+}
+.sidebar ul li:hover{
+  background-color: transparent;
 }
   .navbar input{
     margin-left: 10px;
