@@ -845,6 +845,79 @@ input:checked + .slider:before {
 }
 /* End Info-gen */
 
+/* Start Social Info */
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social-input{
+  background-color: #eee;
+  width: 91%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(184, 182, 182);
+  margin: 15px;
+}
+.social-input i{
+  color: gray;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: .4s;
+}
+.seperator{
+  width: .2px;
+  height: 100%;
+  background-color: rgb(174, 171, 171);
+}
+.social-input input{
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+}
+.social-input i:hover{
+  color: var(--blue-color);
+}
+.social-input #red-hover:hover{
+  color: var(--red-color);
+}
+/* End Social Info */
+
+/* Start CheckBox */
+.main-checkbox{
+   margin-left: 1%;
+}
+.checkbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+.checkbox input{
+  width: 20px;
+  height: 20px;
+}
+.checkbox label{
+  margin-left: 5px;
+}
+
+/* End Checkbox */
+
+/* Start Backup */
+.servers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.servers input{
+  display: none;
+}
+/* End Backup */
 @media screen and (max-width: 600px) {
   #li-side{
     background-color: transparent !important;
