@@ -998,10 +998,10 @@ input:checked + .slider:before {
   transform: translateY(-5px);
 }
 .info-gen form input{
-  width: 300px;
+  width: 290px;
 }
 #last-input{
-  width: 250px !important;
+  width: 240px !important;
 }
 .servers{
   flex-wrap: wrap;
