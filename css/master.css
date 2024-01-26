@@ -910,12 +910,33 @@ input:checked + .slider:before {
 /* Start Backup */
 .servers{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
 }
-.servers input{
-  display: none;
+.server{
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  border: 2px solid #eee;
+  position: relative;
+  border-radius: 10px;
+}
+.server label{
+   cursor: pointer;
+   display: block;
+   margin: 15px;
+}
+.servers input[type="radio"]:checked + .server{
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
+}
+.servers input[type="radio"]{
+  appearance: none;
+}
+.server i{
+  display: block;
+  margin-bottom: 10px;
 }
 /* End Backup */
 @media screen and (max-width: 600px) {
@@ -981,6 +1002,12 @@ input:checked + .slider:before {
 }
 #last-input{
   width: 250px !important;
+}
+.servers{
+  flex-wrap: wrap;
+}
+.backup{
+  height: 700px;
 }
 }
 /* End Responsive */
