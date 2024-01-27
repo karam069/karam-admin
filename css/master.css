@@ -1144,7 +1144,7 @@ input:checked + .slider:before {
   margin-left: auto;
   align-items: center;
   justify-content: flex-start;
-  height: 200vh;
+  height: 300vh;
 }
 .main-profile-box .profile-icons{
   margin-top: 50px;
