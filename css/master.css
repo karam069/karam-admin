@@ -943,7 +943,7 @@ input:checked + .slider:before {
 /* Start Profile */
 .main-content-box .profile-info{
   width: 94.5%;
-  height: 80vh;
+  height: 85vh;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 0 1px gray;
@@ -980,7 +980,7 @@ input:checked + .slider:before {
   height: 4px;
   position: absolute;
   border-radius: 20px;
-  top: 340px;
+  top: 350px;
   left: 80px;
 }
 .main-profile-box .profile-icons{
@@ -992,8 +992,8 @@ input:checked + .slider:before {
    color: var(--orange-color);
 }
 .main-profile-seperator{
-  width: 1px;
-  height: 70%;
+  width: .4px;
+  height: 75%;
   margin-top: auto;
   margin-bottom: auto;
   background-color: gray;
@@ -1028,7 +1028,37 @@ input:checked + .slider:before {
   left: 4px;
   bottom: 0px;
 }
-
+.my-skills{
+  margin-left: 40px;
+  margin-top: 30px;
+  width: 30%;
+  background-color: white;
+  height: 70vh;
+  border-radius: 14px;
+}
+.my-skills ul{
+  transform: translateX(-5%);
+}
+.my-skills ul li{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgb(225, 223, 223);
+}
+.my-skills li span{
+  padding: 5px;
+  border-radius: 6px;
+  margin: 10px;
+  background-color: rgb(247, 243, 243);
+}
+.latest-activates{
+  width: 60%;
+  height: 70vh;
+  margin-left: 40px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 14px;
+}
 /* End Profile */
 @media screen and (max-width: 600px) {
   #li-side{
@@ -1057,6 +1087,9 @@ input:checked + .slider:before {
    .sidebar ul .active{
   background-color: transparent;
 }
+.sidebar h3{
+  font-size: 15px;
+}
 .welcome-card{
   margin-left: 30px;
   margin-bottom: 18px;
@@ -1082,6 +1115,11 @@ input:checked + .slider:before {
 .news-main-text span:nth-child(2){
   font-size: 12px;
 }
+input:checked + .slider:before {
+  -webkit-transform: translateX(44px);
+  -ms-transform: translateX(44px);
+  transform: translateX(44px);
+}
 .launch-icon{
   display: none;
 }
@@ -1106,7 +1144,7 @@ input:checked + .slider:before {
   margin-left: auto;
   align-items: center;
   justify-content: flex-start;
-  height: 160vh;
+  height: 170vh;
 }
 .main-profile-box .profile-icons{
   margin-top: 50px;
@@ -1117,6 +1155,11 @@ input:checked + .slider:before {
 .main-profile-seperator{
  display: none;
 }
+.my-skills, .latest-activates{
+  width: 100%;
+  margin-left: 10px;
+}
+
 }
 /* End Responsive */
 
