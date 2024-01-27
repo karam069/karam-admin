@@ -1144,7 +1144,7 @@ input:checked + .slider:before {
   margin-left: auto;
   align-items: center;
   justify-content: flex-start;
-  height: 170vh;
+  height: 200vh;
 }
 .main-profile-box .profile-icons{
   margin-top: 50px;
@@ -1159,7 +1159,11 @@ input:checked + .slider:before {
   width: 100%;
   margin-left: 10px;
 }
-
+.main-profile-info-informaiton span{ 
+  display: block;
+  padding-right: 30px;
+  margin: 10px;
+}
 }
 /* End Responsive */
 
