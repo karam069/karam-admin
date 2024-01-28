@@ -1093,6 +1093,74 @@ input:checked + .slider:before {
   color: gray;
 }
 /* End Profile */
+
+/* Start Projects */
+.projects-boxes-main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+#project-gray{
+  color: grey;
+  font-size: 13px;
+}
+.project-desc{
+  margin-bottom: 10px;
+}
+.project-desc span{
+  color: grey;
+  margin: 10px;
+}
+.project-imgs{
+  margin: 40px 10px 10px 10px;
+}
+.project-imgs img:not(:first-child){
+  margin-left: -18px;
+}
+.project-imgs img:not(:first-child):hover{
+  margin-left: -14px;
+  transform: scale(1.1);
+}
+.project-imgs img:first-child:hover{
+  transform: scale(1.1);
+}
+.project-imgs img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.projects-keywords {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.projects-keywords span{
+  padding: 6px;
+  background-color: #eee;
+  margin-right: 10px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+.projects-foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 20px;
+}
+.projects-foot span.projects-scale{
+   width: 50%;
+   height: 10px;
+   background: linear-gradient(to right, var(--red-color) 0%, var(--red-color) 50%, #eee 50%, #eee 100%);
+   border-radius: 20px;
+}
+
+/* End Projects */
 @media screen and (max-width: 600px) {
   #li-side{
     background-color: transparent !important;
@@ -1177,7 +1245,7 @@ input:checked + .slider:before {
   margin-left: auto;
   align-items: center;
   justify-content: flex-start;
-  height: 285vh;
+  height: 280vh;
 }
 .main-profile-box .profile-icons{
   margin-top: 50px;
@@ -1196,6 +1264,12 @@ input:checked + .slider:before {
   display: block;
   padding-right: 30px;
   margin: 10px;
+}
+.projects-boxes-main{
+  width: 100%;
+}
+.project-desc span{
+  font-size: 12px;
 }
 }
 /* End Responsive */
