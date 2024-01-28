@@ -1161,6 +1161,80 @@ input:checked + .slider:before {
 }
 
 /* End Projects */
+
+/* Start Courses */
+.main-courses-box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.course{
+  width: 290px !important;
+  height: 450px !important;
+  position: relative;
+}
+.course img:first-child{
+  width: 290px;
+  height: 230px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.course img:nth-child(2){
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  top: 10px;
+}
+.course-txt{
+ margin-left: 20px;
+}
+.course-txt p{
+  color: grey;
+}
+.course-info-txt{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course span{
+   background-color: var(--blue-color);
+   color: white;
+   padding: 2px;
+   font-size: 14px;
+   border-radius: 6px;
+   position: relative;
+}
+.course-info-txt::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: rgb(184, 182, 182);
+}
+.course-info-txt::after{
+  content: "";
+  right: 0;
+  position: absolute;
+  width: 39%;
+  height: 1px;
+  background-color: rgb(184, 182, 182);
+}
+.course-info-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 10px;
+}
+.course-info-main span{
+  background-color: transparent;
+  color: rgb(122, 122, 122);
+}
+/* End Courses */
 @media screen and (max-width: 600px) {
   #li-side{
     background-color: transparent !important;
