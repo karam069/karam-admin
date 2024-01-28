@@ -1235,6 +1235,81 @@ input:checked + .slider:before {
   color: rgb(122, 122, 122);
 }
 /* End Courses */
+
+/* Start Friends */
+.friends-main-boxes{
+  margin-left: -10px;
+}
+.friend{
+  height: 400px !important;
+  width: 20%;
+}
+.contact-friend{
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.contact-friend i{
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+  color: rgb(96, 96, 96);
+}
+.contact-friend i:hover{
+  background-color: var(--blue-color);
+  color: white;
+}
+.friend-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.friend .friend-details img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.friend .friend-details p{
+  margin-top: -15px;
+  color: grey;
+}
+.friend .friend-popularity{
+  margin-left: 10px;
+}
+.friend .friend-popularity div{
+  margin-top: 10px;
+}
+.friend .friend-popularity span{
+  color: black;
+  background-color: transparent !important;
+}
+.friend .friend-foot{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-left: 10px;
+}
+.friend .friend-foot span, .friend-foot-link a{
+  background-color: transparent;
+  color: grey;
+  margin-top: 0;
+}
+.friend .friend-foot-link a{
+  margin:0 2px !important;
+  color: white;
+  padding: 2px 5px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.friend-foot-link a:nth-child(2){
+   background-color: var(--red-color);
+}
+.friend-foot-link a:first-child{
+   background-color: var(--blue-color);
+}
+/* End Friends */
 @media screen and (max-width: 600px) {
   #li-side{
     background-color: transparent !important;
