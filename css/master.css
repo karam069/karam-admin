@@ -1471,6 +1471,71 @@ input:checked + .slider:before {
   font-size: 14px;
 }
 /* End Files */
+
+/* Start Plans */
+.main-plans{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.plan{
+  width: 600px;
+  height: 850px;
+  background-color: white;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+.plan-price{
+  background-color: var(--green-color);
+  width: 94%;
+  height: 18%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  border: 3px solid white;
+  outline: 3px solid var(--green-color);
+}
+.plan-price p{
+  font-size: 30px;
+  color: white;
+  transform: translateY(-10px);
+}
+.plan-price p:nth-child(2){
+  transform: translateY(-50px);
+  font-size: 40px;
+}
+.plan ul li{
+   display: flex;
+   border-bottom: 1px solid rgb(239, 238, 238);
+   justify-content: space-between;
+   align-items: center;
+   margin: 40px 0;
+   padding-right: 20px;
+   width: 100%;
+}
+.plan ul li i{
+  color: var(--red-color);
+  font-size: 20px;
+}
+.plan ul li .yes{
+  color: var(--green-color);
+  font-size: 20px;
+}
+.li-back i{
+  color: grey !important;
+}
+.main-plan-buy a{
+   text-decoration: none;
+   background-color: var(--green-color);
+   margin-left: 35px;
+   padding:5px 15px;
+   border-radius: 10px;
+   color: white;
+}
+
+/* Start Plans */
+
+/* Start Responsive */
 @media screen and (max-width: 600px) {
   #li-side{
     background-color: transparent !important;
@@ -1594,6 +1659,9 @@ input:checked + .slider:before {
 .files-card{
   width: 100%;
   margin-right: 0;
+}
+.plan{
+  width: 350px;
 }
 }
 /* End Responsive */
